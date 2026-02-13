@@ -13,6 +13,7 @@ import PredictiveInsights from "./pages/dashboard/PredictiveInsights";
 import DataStorytelling from "./pages/dashboard/DataStorytelling";
 import WebsitesProperties from "./pages/dashboard/WebsitesProperties";
 import SettingsIntegrations from "./pages/dashboard/SettingsIntegrations";
+import ReportsExports from "./pages/dashboard/ReportsExports";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="funnels" element={<ConversionFunnels />} />
             <Route path="insights" element={<PredictiveInsights />} />
             <Route path="stories" element={<DataStorytelling />} />
+            <Route path="reports" element={<ReportsExports />} />
             <Route path="websites" element={<WebsitesProperties />} />
             <Route path="settings" element={<SettingsIntegrations />} />
           </Route>
