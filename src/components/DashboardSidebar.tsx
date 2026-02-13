@@ -9,6 +9,7 @@ import {
   Settings,
   X,
   Activity,
+  FileDown,
 } from "lucide-react";
 
 const navItems = [
@@ -17,6 +18,7 @@ const navItems = [
   { label: "Conversion Funnels", path: "/dashboard/funnels", icon: TrendingUp },
   { label: "AI Predictive Insights", path: "/dashboard/insights", icon: Brain },
   { label: "Data Storytelling", path: "/dashboard/stories", icon: BookOpen },
+  { label: "Reports & Exports", path: "/dashboard/reports", icon: FileDown },
   { label: "Websites & Properties", path: "/dashboard/websites", icon: Globe },
   { label: "Settings", path: "/dashboard/settings", icon: Settings },
 ];
@@ -44,7 +46,7 @@ const DashboardSidebar = ({ onClose }: Props) => {
       </div>
 
       {/* Navigation */}
-      <nav className="flex-1 py-4 px-3 space-y-1 overflow-auto">
+      <nav className="flex-1 py-4 px-3 space-y-1 overflow-y-auto scrollbar-thin">
         {navItems.map((item) => {
           const isActive =
             item.path === "/dashboard"
